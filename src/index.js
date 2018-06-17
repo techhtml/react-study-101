@@ -20,6 +20,8 @@ import ReactDOM from 'react-dom';
 // (../) 한폴더 위
 // (../폴더명) 한폴더 위의 다른 폴더
 import Header from './Header';
+import Cards from './Cards';
+import JoinButton from './JoinButton';
 
 // css
 import "./css/common.css";
@@ -43,7 +45,9 @@ class App extends React.Component {
     return (
       <div className="app">
         <Header />
-        <div className="contents"></div>
+        <div className="contents">
+          <Cards />
+        </div>
       </div>
       // 정확히는 JSX라고 부르는 특수 문법
     )
