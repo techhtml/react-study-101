@@ -1,7 +1,7 @@
 body {
   background: #eee;
   color: #222;
-  font-family: sans-serif;
+  font-family: Gotham, Helvetica NEUE, Helvetica, sans-serif;
 }
 
 /*
@@ -70,6 +70,24 @@ ul, li {
   color: black;
   text-decoration: none;
   margin-right: 14px;
+}
+
+.header .layer-popup {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  transform: scale(1.5);
+  background: white;
+  left: -150%;
+  width: 100%;
+  transition: .4s transform, .4s opacity;
+}
+
+.header .layer-popup-on {
+  transform: scale(1);
+  opacity: 1;
+  left: 0;
 }
 
 .header .hero {

@@ -26,6 +26,7 @@ import JoinButton from './JoinButton';
 
 // css
 import "./css/common.css";
+import MenuContainer from './MenuContainer';
 
 // class 문
 // 객체를 만드는 것
@@ -41,14 +42,27 @@ import "./css/common.css";
 // A라는 객체가 모든 객체에서 가져야하는 형질을 가지고 있을 때,
 // 모든 객체가 A라는 객체를 상속받는다.
 
+// Events
+// Data Modeling
+// States
+// Order Page (과제)
+
+// Event가 무엇인가?
+// 클릭, 마우스 드래그, 기타등등 유저가 행하는 모든 액션을 Event
+// JavaScript를 이용해서 Event 제어 가능
+// 유저가 버튼을 클릭했을 때... 뭘 하고싶어요...
+
+// React에서 이벤트 제어는 쉬움
+// var x = document.querySelector('button');
+// x.addEventListener('click', function() {}, false)
+
 class App extends React.Component {
   render() {
     return (
       <div className="app">
         <Header />
         <div className="contents">
-          <RewardsCardList />
-          <InformCardList />
+          <MenuContainer />
         </div>
       </div>
       // 정확히는 JSX라고 부르는 특수 문법
